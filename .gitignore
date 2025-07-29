@@ -1,0 +1,39 @@
+# .NET build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VSCode
+.vscode/
+
+# Rider IDE
+.idea/
+
+# Build results
+*.dll
+*.exe
+*.log
+*.pdb
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Auto-generated files
+*.AssemblyInfo.cs
+*.csproj.AssemblyReference.cache
+*.assets.cache
+*.inputs.cache
+*.nuget.g.props
+*.nuget.g.targets
+project.assets.json
+project.nuget.cache
+
+# Others
+*.db
+*.sqlite
+*.mdf
