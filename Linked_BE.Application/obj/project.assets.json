@@ -1,0 +1,97 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Linked_BE.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Linked_BE.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Linked_BE.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Linked_BE.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Linked_BE.Domain/Linked_BE.Domain.csproj",
+      "msbuildProject": "../Linked_BE.Domain/Linked_BE.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Linked_BE.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\NguyenBui\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Personal_project\\Linked_BE\\Linked_BE.Application\\Linked_BE.Application.csproj",
+      "projectName": "Linked_BE.Application",
+      "projectPath": "D:\\Personal_project\\Linked_BE\\Linked_BE.Application\\Linked_BE.Application.csproj",
+      "packagesPath": "C:\\Users\\NguyenBui\\.nuget\\packages\\",
+      "outputPath": "D:\\Personal_project\\Linked_BE\\Linked_BE.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\NguyenBui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\Personal_project\\Linked_BE\\Linked_BE.Domain\\Linked_BE.Domain.csproj": {
+              "projectPath": "D:\\Personal_project\\Linked_BE\\Linked_BE.Domain\\Linked_BE.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
