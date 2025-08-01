@@ -11,17 +11,20 @@ namespace Linked_BE.Domain.Entities
     {
 
         [Key]
-        public int ID { get; set; }
+        public Guid ID { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
 
         [Required]
         [MaxLength(255)]
         public string Title { get; set; }
 
+        [Required]
+        [MaxLength(500)]
         public string Descriptions { get; set; }
 
+        [Required]
         public DateTime CreateAt { get; set; } = DateTime.UtcNow;
 
         // Navigation property

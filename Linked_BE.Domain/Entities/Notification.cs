@@ -7,24 +7,27 @@ namespace Linked_BE.Domain.Entities
     public class Notification
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
-        public int ReceiverUserId { get; set; }
+        public Guid ReceiverUserId { get; set; }
 
         [Required]
-        public int SenderUserId { get; set; }
+        public Guid SenderUserId { get; set; }
 
         [Required]
         [MaxLength(50)]
-        public string NotyTypeID { get; set; }
+        public string NotyTypeEnum { get; set; }
 
+        [Required]
         [MaxLength(100)]
         public string Title { get; set; }
 
+        [Required]
         [MaxLength(150)]
         public string Content { get; set; }
 
+        [Required]
         public DateTime CreateAt { get; set; }
 
         // Navigation properties

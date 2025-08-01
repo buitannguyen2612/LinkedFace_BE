@@ -10,13 +10,12 @@ namespace Linked_BE.Domain.Entities
     public class Images
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
 
-        [Required]
-        public int PostId { get; set; }
+        public Guid? PostId { get; set; }
 
         [Required]
         [MaxLength(255)]

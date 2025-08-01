@@ -10,13 +10,13 @@ namespace Linked_BE.Domain.Entities
     public class Comments
     {
         [Key]
-        public int ID { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
 
         [Required]
-        public int PostId { get; set; }
+        public Guid PostId { get; set; }
 
         [Required]
         public string Content { get; set; }
