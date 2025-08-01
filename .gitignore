@@ -1,0 +1,103 @@
+# Build Folders (you can clean this with `dotnet clean`)
+bin/
+obj/
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Visual Studio
+.vs/
+Generated\ Files/
+
+# Build results
+*.dll
+*.exe
+*.log
+*.pdb
+*.cache
+*.mdb
+
+# Azure Pipelines
+*.azcli
+azure-pipelines.yml
+
+# ASP.NET
+ScaffoldingReadMe.txt
+
+# DotCover
+*.dotCover
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg.sha512
+
+# Auto-generated files
+*.AssemblyInfo.cs
+*.csproj.AssemblyReference.cache
+*.assets.cache
+*.inputs.cache
+*.nuget.g.props
+*.nuget.g.targets
+project.assets.json
+project.nuget.cache
+
+# Entity Framework
+Migrations/
+
+# Database files
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Others
+*.tmp
+*.bak
+*.orig
+*.rej
+*.sdf
+
+# Coverage results
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# JetBrains Rider
+.idea/
+.idea/*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
