@@ -33,5 +33,7 @@ namespace Linked_BE.Domain.Entities
 
         public ICollection<Saved> Saveds { get; set; }
 
+        public ICollection<Images> Images { get; set; }
+
     }
 }

@@ -18,9 +18,24 @@ namespace Linked_BE.Infrastructure.Persistence.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<List<Post>> GetAllPostAsync()
+        public async Task<List<Post>> GetAllPostAsync(int take)
         {
-            return await _dbContext.Posts.ToListAsync();
+            return await _dbContext.Posts.OrderByDescending(p => p.CreateAt)
+                .Take(take)
+                .Include(p => p.User)
+                .ToListAsync();
+        }
+
+        public async Task CreatePostAsync(Post post)
+        {
+            _dbContext.Posts.Add(post);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task UpdatePostAsync(Post post)
+        {
+            _dbContext.Posts.Update(post);
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

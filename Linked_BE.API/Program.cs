@@ -1,4 +1,5 @@
 using Linked_BE.Application.Services;
+using Linked_BE.Application.Services.Posts;
 using Linked_BE.Domain.Interfaces;
 using Linked_BE.Infrastructure.EFCore;
 using Linked_BE.Infrastructure.Persistence.Repositories;
@@ -15,7 +16,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IPostsRepository, PostsRepository>();
-builder.Services.AddScoped<GetAllPostUserCase>();
+builder.Services.AddScoped<GetAllPostUseCase>();
+builder.Services.AddScoped<CreateNewPostUseCase>();
+builder.Services.AddScoped<UpdatePostUseCase>();
+
 
 var app = builder.Build();
 

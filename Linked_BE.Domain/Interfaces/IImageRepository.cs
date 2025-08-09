@@ -6,10 +6,8 @@ using Linked_BE.Domain.Entities;
 
 namespace Linked_BE.Domain.Interfaces
 {
-    public interface IPostsRepository
+    public interface IImageRepository
     {
-        Task<List<Post>> GetAllPostAsync(int take);
-        Task CreatePostAsync(Post post);
-        Task UpdatePostAsync(Post post);
+        Task CreateImageAsync(Images image);
     }
 }
