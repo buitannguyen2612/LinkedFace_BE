@@ -1,8 +1,10 @@
+using Linked_BE.Application.Interfaces;
 using Linked_BE.Application.Services;
 using Linked_BE.Application.Services.Posts;
 using Linked_BE.Domain.Interfaces;
 using Linked_BE.Infrastructure.EFCore;
 using Linked_BE.Infrastructure.Persistence.Repositories;
+using Linked_BE.Infrastructure.Persistence.Transaction;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IPostsRepository, PostsRepository>();
+builder.Services.AddScoped<ITransactionManager, TransactionRepository>();
+builder.Services.AddScoped<IImageRepository, ImageRepository>();
 builder.Services.AddScoped<GetAllPostUseCase>();
 builder.Services.AddScoped<CreateNewPostUseCase>();
 builder.Services.AddScoped<UpdatePostUseCase>();

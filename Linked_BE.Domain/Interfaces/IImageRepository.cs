@@ -8,6 +8,6 @@ namespace Linked_BE.Domain.Interfaces
 {
     public interface IImageRepository
     {
-        Task CreateImageAsync(Images image);
+        Task CreateImageAsync(List<Images> image);
     }
 }
